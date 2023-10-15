@@ -10,7 +10,7 @@ const routes = require('./routes/ToDoRoute')
 
 const app = express();
 app.use(express.json());
-app.use(cors())
+app.use(cors());
 
 mongoose
     .connect(process.env.MONGODB_URL)
